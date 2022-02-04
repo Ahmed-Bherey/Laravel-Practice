@@ -37,6 +37,10 @@
             @endforeach
         </tbody>
     </table>
+    @forelse ($posts as $post)
+    @empty
+    <h2 class="text-danger">No Posts for this User</h2>
+    @endforelse
     {{-- {{ $users->links() }} --}}
 </div>
 @endsection
